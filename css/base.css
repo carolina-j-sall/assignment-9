@@ -1,6 +1,15 @@
 body {
   padding: 0 2em 0 2em; 
   font-size: 18px;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  animation: bgCol 5s ease-in-out infinite;
+}
+@keyframes bgCol {
+  0% {background: #9eadff;}
+  50% {background: #516bff;}
+  100% {background: #9eadff;}
 }
 div {
   padding: 1em;
@@ -15,7 +24,20 @@ p {
 .form {
   width: 800px;
 }
-.form-content {
+.form-svg {
+  display: inline;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+.form-svg-reverse {
+  display: inline;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+.form-title {
+   display: inline;
+}
+.form-desc {
   width: 500px;
 }
 .form-structure {
@@ -26,14 +48,6 @@ p {
   padding: 2em;
   border-radius: 10px 0 10px 0;
   background-color: #0026FF;
-}
-.form-structure:hover {
-  animation: bgCol 5s linear infinite;
-}
-@keyframes bgCol {
-  0% {background:#0026FF;}
-  50% {background:#5a73ff;}
-  100% {background:#0026FF;}
 }
 .form-label {
   margin-bottom: 12px;
@@ -79,6 +93,7 @@ textarea:hover {
 }
 .form-submit:hover {
   background-color: #E7D9FF;
+  color: hotpink;
 }
 select option:hover {
   background-color: #F8F3FF;
