@@ -1,8 +1,89 @@
 body {
   padding: 0 2em 0 2em; 
-  border: 2px solid red;
+  font-size: 18px;
 }
 div {
   padding: 1em;
-  border: 2px dotted blue;
 }
+h1, h2, h3, h4, .form-label {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-style: normal;
+}
+p {
+  font-family: "Roboto", sans-serif;
+}
+.form {
+  width: 800px;
+}
+.form-content {
+  width: 500px;
+}
+.form-structure {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 50%;
+  padding: 2em;
+  border-radius: 10px 0 10px 0;
+  background-color: #0026FF;
+}
+.form-structure:hover {
+  animation: bgCol 5s linear infinite;
+}
+@keyframes bgCol {
+  0% {background:#0026FF;}
+  50% {background:#5a73ff;}
+  100% {background:#0026FF;}
+}
+.form-label {
+  margin-bottom: 12px;
+  margin-top: 20px;
+  color: #F8F5FF;
+}
+.form-input {
+  padding: 0.5em;
+  font-family: "Roboto", sans-serif;
+}
+.form-dropdown {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 9L12 15L18 9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 20px;
+}
+.form-input:hover {
+  background-color: #F8F5FF;
+}
+textarea {
+  padding: 0.8em;
+  font-family: "Roboto", sans-serif;
+  height: 200px;
+}
+.text { 
+  cursor: text; 
+}
+textarea:hover {
+  background-color: #F8F5FF;
+}
+.form-submit {
+  justify-content: center;
+  font-family: "Bricolage Grotesque", sans-serif;
+  margin-top: 40px;
+  height: 45px;
+  width: 120px;
+  background-color: #fff;
+  color: #0026FF;
+  border: none;
+}
+.form-submit:hover {
+  background-color: #E7D9FF;
+}
+select option:hover {
+  background-color: #F8F3FF;
+}
+select option:checked {
+  background-color: #0026ff64;
+}
+
