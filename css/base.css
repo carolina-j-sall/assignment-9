@@ -40,6 +40,9 @@ p {
 .form-desc {
   width: 500px;
 }
+.btn-smile {
+  margin-top: 0!important;
+}
 .form-structure {
   display: flex;
   justify-content: flex-start;
@@ -81,7 +84,7 @@ textarea {
 textarea:hover {
   background-color: #F8F5FF;
 }
-.form-submit {
+.btn {
   justify-content: center;
   font-family: "Bricolage Grotesque", sans-serif;
   margin-top: 40px;
@@ -91,9 +94,10 @@ textarea:hover {
   color: #0026FF;
   border: none;
 }
-.form-submit:hover {
+.btn:hover {
   background-color: #E7D9FF;
   color: hotpink;
+  transition: all 0.2s ease-in-out;
 }
 select option:hover {
   background-color: #F8F3FF;
